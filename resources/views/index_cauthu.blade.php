@@ -72,7 +72,7 @@
             <tfoot>
                 <tr>
                     <td colspan="8">
-                        <a href="{{url('/trangAdd')}}"><button id="button">Thêm cầu thủ</button></a>
+                        <a href="{{url('/index_cauthu/trangAdd')}}"><button id="button">Thêm cầu thủ</button></a>
                     </td>
                 </tr>
             </tfoot>
