@@ -51,7 +51,7 @@
             </thead>
             <tbody>
 
-            @foreach($data_cauthu as $value)
+            @foreach($data as $value)
                 <tr>
                     <td>{{ $value->id }}</td>
                     <td>{{ $value->ten_cau_thu }}</td>
@@ -72,7 +72,7 @@
             <tfoot>
                 <tr>
                     <td colspan="8">
-                        <a href="{{url('/index_cauthu/trangAdd')}}"><button id="button">Thêm cầu thủ</button></a>
+                        <a href="{{url('/trangAdd')}}"><button id="button">Thêm cầu thủ</button></a>
                     </td>
                 </tr>
             </tfoot>

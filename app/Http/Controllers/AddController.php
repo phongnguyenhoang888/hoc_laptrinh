@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\support\Facades\DB;
+use App\Models\cauthu; // phuong thuc goi model 
 class AddController extends Controller
 {
     /**
@@ -14,11 +15,12 @@ class AddController extends Controller
 
      public function get_data(){
         // lay data
-        $data_cauthu  = DB::table('cauthu')->get();
-        $data_cauthu  =$data_cauthu  ->toArray();
+        $data = cauthu::all();
+       // $data_cauthu  = DB::table('cauthu')->get();
+        //$data_cauthu  =$data_cauthu  ->toArray();
         
         // trả về view
-        return view('index_cauthu', compact('data_cauthu'));
+        return view('index_cauthu', compact('data'));
      }
     public function get_tt()
     {
